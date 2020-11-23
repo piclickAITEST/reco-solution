@@ -1,0 +1,163 @@
+@font-face { font-family: 'IBMPlexSansKR-Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+/* PC */
+
+#background {
+  position: fixed;
+  width: 158px;
+  height: 716px;
+  background-color: white;
+  box-sizing: content-box;
+  z-index: 101;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 3px 0px 5px rgba(0,0,0,0.1);
+}
+
+#piclick-sol1.pc {
+  text-align: center;
+  position: fixed;
+  width: 160px;
+  box-sizing : content-box;
+  font-family: 'IBMPlexSansKR-Light';
+  z-index: 101;
+}
+
+.p-header {
+  height: 25px;
+  background-color: #be9f7b;
+  color: white;
+  font-weight: 600;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.p-header img {
+  width: 15px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+#piclick-sol1.pc .s-images {
+  position: relative;
+}
+
+#piclick-sol1.pc .s-images .s-image{
+  width: auto;
+  cursor: pointer;
+  height: 145px;
+  margin-top : 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.product-price {
+  font-size: 12px;
+  color: #1596cf;
+  font-weight: 700;
+  padding-top: 4px;
+}
+
+.arrow {
+  position: absolute;
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+#p-down {
+  bottom : 20px;
+}
+
+.drawer {
+  height: 30px;
+  background: #be9f7b;
+  border-radius: 0px 0px 20px 20px;
+  cursor: pointer;
+  box-shadow: 3px 2px 5px rgba(0,0,0,0.1);
+}
+
+.piclick {
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* 모바일 */
+
+/* @keyframes close{
+  from {width: 175px;}
+  to {width: 0;}
+}
+
+@keyframes open{
+  from {width: 175px;}
+  to {width: 0;}
+} */
+
+#sideTag {
+  width: 35px;
+  height: 138px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  position: fixed;
+  top: 120px;
+  right: 175px;
+  writing-mode: tb-rl;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-shadow: 0px 0px 1px;
+  line-height: 30px;
+  z-index: 102;
+  border-radius: 30px 0px 0px 30px;
+  box-shadow: -2px 1px 4px rgba(0,0,0,0.1);
+  font-family: 'IBMPlexSansKR-Light';
+}
+
+#xButton {
+  width: 25px;
+  z-index: 103;
+  position: fixed;
+  right: 0px;
+}
+
+#todayCheck {
+  height: 20px;
+  margin-right: 5px;
+  text-align: right;
+}
+
+#piclick-sol1.mobile {
+  text-align: center;
+  position: fixed;
+  right:0px;
+  top:90px;
+  width: 175px;
+  z-index: 101;
+  box-sizing : content-box;
+  font-family: 'IBMPlexSansKR-Light';
+}
+
+#piclick-sol1.mobile .s-images {
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: -2px 1px 4px rgba(0,0,0,0.1);
+}
+
+#piclick-sol1.mobile .s-images .s-image{
+  background-color: white;
+  cursor: pointer;
+  height: 168px;
+  margin : 5px 8px;
+}
+
+.xButton {
+  position: absolute;
+  right: 127px;
+  bottom: 2px;
+  color: white;
+  font-weight: 600;
+
+}

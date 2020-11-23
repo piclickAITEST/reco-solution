@@ -1,0 +1,15 @@
+﻿*{margin: 0; padding: 0; border: 0;}
+body{padding: 50px;}
+h1{padding: 0 0 20px;}
+.fl{float: left;}
+.fr{float: right;}
+
+.slideshow{width: 300px; height: 250px; margin: 0 20px 20px 0; float: left; position: relative; border: 1px solid #cccccc;}
+.box1{width: 150px; height: 250px;}
+.box2{width: 150px; height: 250px;}
+.img1{position: absolute; top: 0; left: 0;}
+.img2{position: absolute; bottom: 0; right: 0;}
+.txt1{position: absolute; top: 200px; left: 80px;}
+.txt2{position: absolute; bottom: 160px; right: 50px;}
+
+.bar{width: 18px; height: 2px; background-color: #222222; position: absolute; top: 180px; left: 141px; z-index: 10;}

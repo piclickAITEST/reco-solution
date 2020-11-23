@@ -1,0 +1,8 @@
+.vscode/*
+__pycache__/*
+
+static/img/uploads/*
+static/recall/*
+
+*.csv
+

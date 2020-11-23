@@ -1,0 +1,266 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+}
+
+body, div, span, p, li, dd, dt, td, header, h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Sans KR","SF Pro KR","PingFangSC-Light","Microsoft YaHei","Noto sans","SF Pro Display",
+	"SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.title {
+  font-size: 15pt;
+  padding-top: 20px;
+  color: #303f9f;
+}
+
+
+h4 {
+  font-weight: 700;
+  color: #303f9f ;;
+}
+
+.form-control {
+  font-size : 0.8rem;
+}
+
+.col-md-3 {
+  margin-top: 10px;
+}
+.col-md-9 {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.dropdown {
+  text-align: end;
+
+}
+
+.dropdown-item {
+  font-size: 15px;
+}
+
+#items1 {
+    display: inline-block;
+    position: relative;
+}
+#items1 .item {
+    position: absolute;
+    border: 2px solid;
+    margin: 0;
+    color: white;
+}
+
+#items1 .name {
+    position: absolute;
+    font-weight: 600;
+    
+}
+
+#items2 {
+    display: inline-block;
+    overflow-y: auto;
+    max-height: 850px;
+}
+
+#items2 .item {
+  padding: 0px;
+  margin: 7px;
+  float: left;
+  display: none;
+  position: relative;
+  width: 208px;
+  /* height: 268px; */
+  height: 296px;
+  transition: box-shadow .3s;
+  border: 1px solid #ccc;
+}
+
+#items2 .item:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+#items2 .item:hover a > .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:rgba(0, 0, 0, 0.4);
+  top:0px;
+}
+
+#items2 .img {
+  width: 100%; 
+  height: 245px; 
+  overflow: hidden;
+}
+
+.description {
+  display: none;
+  position: absolute;
+  color: white;
+  top: 45px;
+  z-index: 10;
+  text-align: center;
+  width:100%;
+}
+
+ul {
+  list-style:none;
+  padding: 0px 15px;
+}
+
+.product_name {
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  font-size: 9pt;
+  position: relative;
+  display: grid;
+}
+
+.category span {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.product_price span {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+
+}
+
+#items2 .score {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    background: rgba(150, 0, 0, 0.9);
+    font-size: 9pt;
+    position: relative;
+    display: grid;
+}
+
+#items2 .product_price {
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: 10.5pt;
+  opacity: 0.8;
+  position: relative;
+  background: #303f9f;
+}
+
+#file-upload {
+    display: none;
+}
+
+.category {
+    clear: both;
+    position: absolute;
+    bottom: 80px;
+    left: 87px;
+}
+
+input.form-control {
+  border: 2px solid #303f9f;
+}
+
+.btn {
+  font-size: .8rem;
+  color: white;
+
+}
+
+.btn.dropdown-toggle {
+  border: 1px solid #303f9f;
+  background-color: #303f9f;
+}
+
+.dropdown-item {
+  letter-spacing: 0.5px;
+  color: #303f9f;
+  padding: 0.5rem 0rem;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dropdown-item:hover {
+  background-color: #9fa8da;
+  color : white;
+}
+
+.dropdown-menu {
+  min-width: 8rem;
+}
+
+.btn#btn-search {
+  background-color: #303f9f ;;
+  color: white;
+  height: 38px;
+  border-right: 2px solid #e8eaf6;
+}
+
+#btn-upload {
+  height: 38px;
+  color: white;
+
+  background-color: #303f9f ;;
+}
+
+#btn-upload:hover {
+  border-color : #212529;
+}
+
+button#btn-au {
+    margin : 2px;
+    color: #303f9f ;
+    border: 1px solid #303f9f ;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 4px;
+}
+
+.search-box {
+  min-height: 500px; 
+  width: 100%;
+  /* border: 1px solid #303f9f ; */
+  /* background-color: #e8eaf6; */
+}
+
+.drag {
+  background-color: white;
+  color: #80bdff;
+}
+
+
+.img-drag.drag {
+  background-image: url(/static/img/drag_upload.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.img-drag {
+  min-height: 630px;
+  text-align: center;
+  border: 2px dashed #303f9f ;
+}
+
+.result-box {
+  min-height: 900px; 
+  width:100%;
+  /* border: 1px solid #303f9f ; */
+  background-color: #e8eaf6;
+}
+
+.spinner-grow {
+  display : none;
+}
+

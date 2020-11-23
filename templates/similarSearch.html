@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PICLICK MAGIC LIVEKR v2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/v1/similarSearch.css">
+  <script src="/static/jquery/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <script src="/static/js/v1/similarSearch.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var demo = new Demo({
+        'ai_version': 'v1',
+        'product_set_id': '{{ product_set_id }}',
+        'au_id': '{{ au_id }}',
+        //'p_key': $('input','#p_key').val()
+      });
+
+
+
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="search-box alert">
+          <p class="title">유사 상품 추천 솔루션</p>
+          <form id="p_key">
+            <input type="text" value='98_'>
+          </form>
+          <div class="input-group mb-3">
+            <form id="file-upload">
+              <input type="file" name="file" accept=".gif, .jpg, .png, .jpeg, .PNG" />
+            </form>
+            <input type="text" name="img" class="form-control" />
+            <div class="input-group-append">
+              <button class="btn" type="button" id="btn-search">Search</button>
+              <button class="btn" type="button" id="btn-upload">Upload</button>
+            </div>
+          </div>
+          
+          <div class="row" style="padding-top:10px;">
+            <div class="col">
+              <div class="alert alert-light img-drag drag">
+                <div class="spinner-grow text-dark" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <div id="items1">
+                  <img src="" class="img img-fluid">
+                  <div class="item"></div>
+                  <div class="name"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-9">
+        <div class="result-box alert">
+          <table>
+            <tr>
+              <td>
+                <div id="btn-au"></div>
+              </td>
+              <td>
+                <div class="dropdown dropleft">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-item" id="score-desc" href="#">점수 ▼</div>
+                    <div class="dropdown-item" id="score-asc" href="#">점수 ▲</div>
+                    <div class="dropdown-item" id="price-desc" href="#">가격 ▼</div>
+                    <div class="dropdown-item" id="price-asc" href="#">가격 ▲</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <hr>
+          <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div id="items2">
+            <div class="item">
+              <a href="#" target="_blank">
+                <div class="img"></div>
+                <div class="product_name"></div>
+                <div class="score"></div>
+                <div class="product_price"><span></span></div>
+                <div class="overlay"></div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <a href="https://icons8.com/icon/747/photo-gallery" style="display:none">Photo Gallery icon by Icons8</a>
+</footer>
+
+</html>

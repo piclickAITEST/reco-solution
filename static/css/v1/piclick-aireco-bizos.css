@@ -1,0 +1,471 @@
+@font-face { font-family: 'IBMPlexSansKR-Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* PC */
+
+#piclick-bg {
+  position: fixed;
+  width: 143px;
+  height: 186px;
+  background-color: white;
+  box-sizing: content-box;
+  z-index: 1001;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 3px 0px 5px rgba(0,0,0,0.1);
+}
+
+#piclick-sirs.pc {
+  text-align: center;
+  position: fixed;
+  width: 145px;
+  box-sizing : content-box;
+  font-family: 'IBMPlexSansKR-Light';
+  z-index: 1001;
+}
+
+.p-header {
+  cursor: pointer;
+  height: 23px;
+  background-color: #333333;
+  color: white;
+  font-weight: 600;
+  padding-top: 2px;
+  font-size: 13px;
+}
+
+#piclick-sirs.pc .s-images {
+  position: relative;
+}
+
+#piclick-sirs.pc .s-images .s-image{
+  width: auto;
+  cursor: pointer;
+  height: 135px;
+  margin-top : 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  overflow: hidden;
+}
+
+#piclick-sirs.pc .s-images .s-image.pc img{
+  width: 100%;
+}
+
+#piclick-sirs.pc .s-images .product-price {
+  font-size: 11px;
+  color: black;
+  font-weight: 500;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  padding-left: 60px;
+  cursor: pointer;
+}
+
+#arrow-down {
+  bottom : 20px;
+}
+
+.drawer {
+  height: 17px;
+  background: #333333;
+  border-radius: 20px 20px 0px 0px;
+  cursor: pointer;
+  box-shadow: 3px 2px 5px rgba(0,0,0,0.1);
+}
+
+.powered {
+  font-size: 11px;
+  color: black;
+}
+
+.piclick {
+  font-weight: 700;
+  font-size: 13px;
+  color: black;
+
+}
+
+.today {
+  cursor: pointer;
+  height: 24px;
+  background-color: #333333;
+  color: white;
+  padding-top: 5px;
+  font-size: 12px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+/* 모바일 */
+
+#piclick-sirs.mobile .s-images::-webkit-scrollbar {
+  display : none; /* Chrome, Safari, Opera*/
+}
+
+#piclick-sirs.mobile .s-images .s-image img {
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  margin: 2px 2px;
+}
+
+.xButton {
+  position: absolute;
+  right: 127px;
+  bottom: 2px;
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-height: 540px) {
+  #piclick-sirs.mobile .s-images {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: none;
+    box-shadow: -2px -2px 4px rgba(0,0,0,0.1);
+    overflow: overlay;
+    max-height: 386px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #sideTag {
+    height:130px;
+    position: fixed;
+    top: 90px;
+    right: -33px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  #piclick-sirs.mobile {
+    text-align: center;
+    position: fixed;
+    right:0px;
+    top:40px;
+    width: 90px;
+    z-index: 1000;
+    box-sizing : content-box;
+    font-family: 'IBMPlexSansKR-Light';
+  }
+
+  #piclick-sirs.mobile .s-images .s-image{
+    height: 118px;
+    overflow: hidden;
+  }
+  label[for="todayCheck"] {
+    position: relative;
+    top: -0.5px;
+    font-size: 5px;
+    margin-bottom: 0px;
+  }
+  #xButton {
+    width: 16px;
+    z-index: 1003;
+    position: absolute;
+    right: 2px;
+  }
+  input#todayCheck {
+    width: 7px;
+    height: 7px;
+    background-size: 7px 7px;
+  }
+  #piclick-sirs.mobile .s-images .product-price{
+    font-size: 6px;
+    height: 12px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+  }
+  #todayCheck {
+    text-align: left;
+    padding-left: 2px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+  }
+
+}
+
+@media (min-height: 540px) and (max-height: 570px) {
+  #piclick-sirs.mobile .s-images {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: none;
+    box-shadow: -2px -2px 4px rgba(0,0,0,0.1);
+    overflow: overlay;
+    max-height: 431px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #sideTag {
+    height:138px;
+    position: fixed;
+    top: 195px;
+    right: -33px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  #piclick-sirs.mobile {
+    text-align: center;
+    position: fixed;
+    right:0px;
+    top:40px;
+    width: 101.25px;
+    z-index: 1000;
+    box-sizing : content-box;
+    font-family: 'IBMPlexSansKR-Light';
+  }
+
+  #piclick-sirs.mobile .s-images .s-image{
+    height: 132px;
+    overflow: hidden;
+  }
+  label[for="todayCheck"] {
+    position: relative;
+    top: -0.5px;
+    font-size: 6px;
+    margin-bottom: 0px;
+  }
+  #xButton {
+    width: 16px;
+    z-index: 1003;
+    position: absolute;
+    right: 2px;
+  }
+  input#todayCheck {
+    width: 8px;
+    height: 8px;
+    background-size: 8px 8px;
+  }
+  #piclick-sirs.mobile .s-images .product-price{
+    font-size: 7px;
+    height: 13px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+  }
+  #todayCheck {
+    text-align: left;
+    padding-left: 2px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+  }
+}
+
+
+@media (min-height: 570px) and (max-height: 638px) {
+  #piclick-sirs.mobile .s-images {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: none;
+    box-shadow: -2px -2px 4px rgba(0,0,0,0.1);
+    overflow: overlay;
+    max-height: 461px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #sideTag {
+    height:138px;
+    position: fixed;
+    top: 195px;
+    right: -33px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  #piclick-sirs.mobile {
+    text-align: center;
+    position: fixed;
+    right:0px;
+    top:40px;
+    width: 108.75px;
+    z-index: 1000;
+    box-sizing : content-box;
+    font-family: 'IBMPlexSansKR-Light';
+  }
+
+  #piclick-sirs.mobile .s-images .s-image{
+    height: 141px;
+    overflow: hidden;
+  }
+  label[for="todayCheck"] {
+    position: relative;
+    top: -0.5px;
+    font-size: 7px;
+    margin-bottom: 0px;
+  }
+  #xButton {
+    width: 16px;
+    z-index: 1003;
+    position: absolute;
+    right: 2px;
+  }
+  input#todayCheck {
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+  }
+  #piclick-sirs.mobile .s-images .product-price{
+    font-size: 8px;
+    height: 14px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+  }
+  #todayCheck {
+    text-align: left;
+    padding-left: 2px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+  }
+}
+
+@media (min-height: 638px) and (max-height: 670px) {
+  #piclick-sirs.mobile .s-images {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: none;
+    box-shadow: -2px -2px 4px rgba(0,0,0,0.1);
+    overflow: overlay;
+    max-height: 494px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #sideTag {
+    height:138px;
+    position: fixed;
+    top: 195px;
+    right: -33px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  #piclick-sirs.mobile {
+    text-align: center;
+    position: fixed;
+    right:0px;
+    top:40px;
+    width: 116.25px;
+    z-index: 1000;
+    box-sizing : content-box;
+    font-family: 'IBMPlexSansKR-Light';
+  }
+  #piclick-sirs.mobile .s-images .s-image{
+    height: 151px;
+    overflow: hidden;
+  }
+  label[for="todayCheck"] {
+    position: relative;
+    top: -0.5px;
+    font-size: 8px;
+    margin-bottom: 0px;
+  }
+  #xButton {
+    width: 17px;
+    z-index: 1003;
+    position: absolute;
+    right: 2px;
+  }
+  input#todayCheck {
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+  }
+  #piclick-sirs.mobile .s-images .product-price{
+    font-size: 9px;
+    height: 15px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+  }
+  #todayCheck {
+    text-align: left;
+    padding-left: 2px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+  }
+}
+
+@media (min-height: 670px) {
+  #piclick-sirs.mobile .s-images {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: none;
+    box-shadow: -2px -2px 4px rgba(0,0,0,0.1);
+    overflow: overlay;
+    max-height: 524px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #sideTag {
+    height:138px;
+    position: fixed;
+    top: 195px;
+    right: -33px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  #piclick-sirs.mobile {
+    text-align: center;
+    position: fixed;
+    right:0px;
+    top:40px;
+    width: 123.75px;
+    z-index: 1000;
+    box-sizing : content-box;
+    font-family: 'IBMPlexSansKR-Light';
+  }
+  #piclick-sirs.mobile .s-images .s-image{
+    height: 160px;
+    overflow: hidden;
+  }
+
+  label[for="todayCheck"] {
+    position: relative;
+    top: -0.5px;
+    font-size: 9px;
+    margin-bottom: 0px;
+  }
+  #xButton {
+    width: 18px;
+    z-index: 1003;
+    position: absolute;
+    right: 2px;
+  }
+  input#todayCheck {
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+  }
+  #piclick-sirs.mobile .s-images .product-price{
+    font-size: 10px;
+    height: 16px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+  }
+  #todayCheck {
+    text-align: left;
+    padding-left: 2px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    }
+}
